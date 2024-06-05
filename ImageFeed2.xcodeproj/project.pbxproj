@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71086332C0DE5D500CB60CE /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71086322C0DE5D500CB60CE /* ImagesListCell.swift */; };
 		F7393BA12C09C26B00DA0290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA02C09C26B00DA0290 /* AppDelegate.swift */; };
 		F7393BA32C09C26B00DA0290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA22C09C26B00DA0290 /* SceneDelegate.swift */; };
-		F7393BA52C09C26B00DA0290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA42C09C26B00DA0290 /* ViewController.swift */; };
+		F7393BA52C09C26B00DA0290 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA42C09C26B00DA0290 /* ImagesListViewController.swift */; };
 		F7393BA82C09C26B00DA0290 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7393BA72C09C26B00DA0290 /* Base */; };
 		F7393BAA2C09C26D00DA0290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7393BA92C09C26D00DA0290 /* Assets.xcassets */; };
 		F7393BAD2C09C26D00DA0290 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7393BAC2C09C26D00DA0290 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F71086322C0DE5D500CB60CE /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 		F7393B9D2C09C26B00DA0290 /* ImageFeed2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7393BA02C09C26B00DA0290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7393BA22C09C26B00DA0290 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7393BA42C09C26B00DA0290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7393BA42C09C26B00DA0290 /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 		F7393BA72C09C26B00DA0290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7393BA92C09C26D00DA0290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7393BAC2C09C26D00DA0290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71086342C0DE61100CB60CE /* ImagesList */ = {
+			isa = PBXGroup;
+			children = (
+				F7393BA42C09C26B00DA0290 /* ImagesListViewController.swift */,
+				F71086322C0DE5D500CB60CE /* ImagesListCell.swift */,
+			);
+			path = ImagesList;
+			sourceTree = "<group>";
+		};
 		F7393B942C09C26A00DA0290 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +69,7 @@
 			children = (
 				F7393BA02C09C26B00DA0290 /* AppDelegate.swift */,
 				F7393BA22C09C26B00DA0290 /* SceneDelegate.swift */,
-				F7393BA42C09C26B00DA0290 /* ViewController.swift */,
+				F71086342C0DE61100CB60CE /* ImagesList */,
 				F7393BA62C09C26B00DA0290 /* Main.storyboard */,
 				F7393BA92C09C26D00DA0290 /* Assets.xcassets */,
 				F7393BAB2C09C26D00DA0290 /* LaunchScreen.storyboard */,
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7393BA52C09C26B00DA0290 /* ViewController.swift in Sources */,
+				F7393BA52C09C26B00DA0290 /* ImagesListViewController.swift in Sources */,
+				F71086332C0DE5D500CB60CE /* ImagesListCell.swift in Sources */,
 				F7393BA12C09C26B00DA0290 /* AppDelegate.swift in Sources */,
 				F7393BA32C09C26B00DA0290 /* SceneDelegate.swift in Sources */,
 			);
@@ -299,7 +311,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +320,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.LightMoonG.ImageFeed2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,7 +342,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +351,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.LightMoonG.ImageFeed2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
