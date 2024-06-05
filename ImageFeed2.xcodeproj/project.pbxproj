@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F71086332C0DE5D500CB60CE /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71086322C0DE5D500CB60CE /* ImagesListCell.swift */; };
+		F71086362C10860100CB60CE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71086352C10860100CB60CE /* ProfileViewController.swift */; };
 		F7393BA12C09C26B00DA0290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA02C09C26B00DA0290 /* AppDelegate.swift */; };
 		F7393BA32C09C26B00DA0290 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA22C09C26B00DA0290 /* SceneDelegate.swift */; };
 		F7393BA52C09C26B00DA0290 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7393BA42C09C26B00DA0290 /* ImagesListViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		F71086322C0DE5D500CB60CE /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		F71086352C10860100CB60CE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F7393B9D2C09C26B00DA0290 /* ImageFeed2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7393BA02C09C26B00DA0290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7393BA22C09C26B00DA0290 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				F7393BA02C09C26B00DA0290 /* AppDelegate.swift */,
 				F7393BA22C09C26B00DA0290 /* SceneDelegate.swift */,
+				F71086352C10860100CB60CE /* ProfileViewController.swift */,
 				F71086342C0DE61100CB60CE /* ImagesList */,
 				F7393BA62C09C26B00DA0290 /* Main.storyboard */,
 				F7393BA92C09C26D00DA0290 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			files = (
 				F7393BA52C09C26B00DA0290 /* ImagesListViewController.swift in Sources */,
 				F71086332C0DE5D500CB60CE /* ImagesListCell.swift in Sources */,
+				F71086362C10860100CB60CE /* ProfileViewController.swift in Sources */,
 				F7393BA12C09C26B00DA0290 /* AppDelegate.swift in Sources */,
 				F7393BA32C09C26B00DA0290 /* SceneDelegate.swift in Sources */,
 			);

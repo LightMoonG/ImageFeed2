@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IaU-Js-zdK">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -84,20 +84,119 @@
                             <constraint firstAttribute="trailing" secondItem="mhc-Do-ocw" secondAttribute="trailing" id="jHv-Eo-mdw"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="ImageListActive" id="80l-eq-w6D"/>
                     <connections>
                         <outlet property="tableView" destination="mhc-Do-ocw" id="7BO-gP-6an"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="70.992366412213741" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="134" y="122"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="up4-0n-1J5">
+            <objects>
+                <tabBarController id="IaU-Js-zdK" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KNw-oU-xdM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" name="YP White"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="YP Black "/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Kdc-PE-kTv"/>
+                        <segue destination="UPe-r2-XmU" kind="relationship" relationship="viewControllers" id="dfk-Vx-AAW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLC-Ze-WVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="443"/>
+        </scene>
+        <!--ProfileViewController-->
+        <scene sceneID="7fW-2T-tDx">
+            <objects>
+                <viewController id="UPe-r2-XmU" userLabel="ProfileViewController" customClass="ProfileViewController" customModule="ImageFeed2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yus-xI-ysR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kda-zS-CnE">
+                                <rect key="frame" x="16" y="76" width="361" height="165"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-qE-Y2a">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="70"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FotoProfile" translatesAutoresizingMaskIntoConstraints="NO" id="CYl-6j-DXA">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="0oB-fw-Dp4"/>
+                                                    <constraint firstAttribute="height" constant="70" id="cnP-Id-i1I"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk7-Pm-hrH">
+                                                <rect key="frame" x="317" y="13" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="6bg-D4-0Zb"/>
+                                                    <constraint firstAttribute="width" constant="44" id="jqp-A5-qdn"/>
+                                                </constraints>
+                                                <buttonConfiguration key="configuration" style="plain" image="IconExit"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Екатерина Новикова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYJ-AS-aTI">
+                                        <rect key="frame" x="0.0" y="78" width="233.66666666666666" height="27.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" name="YP White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ekaterina_nov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5v-Jj-bix">
+                                        <rect key="frame" x="0.0" y="113.66666666666666" width="113" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YP Gray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZV-S6-GHs">
+                                        <rect key="frame" x="0.0" y="143.33333333333334" width="99.666666666666671" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="YP White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pLi-qE-Y2a" secondAttribute="trailing" id="jCn-xb-sVv"/>
+                                    <constraint firstItem="pLi-qE-Y2a" firstAttribute="leading" secondItem="kda-zS-CnE" secondAttribute="leading" id="xNJ-NQ-xdJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6IP-ft-O91"/>
+                        <color key="backgroundColor" name="YP Black "/>
+                        <constraints>
+                            <constraint firstItem="kda-zS-CnE" firstAttribute="leading" secondItem="6IP-ft-O91" secondAttribute="leading" constant="16" id="4ML-Tc-PcD"/>
+                            <constraint firstItem="6IP-ft-O91" firstAttribute="trailing" secondItem="kda-zS-CnE" secondAttribute="trailing" constant="16" id="K9Z-vR-bZ0"/>
+                            <constraint firstItem="kda-zS-CnE" firstAttribute="top" secondItem="yus-xI-ysR" secondAttribute="top" constant="76" id="kaP-aq-ZGL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ProfileActiove" id="IIT-Xr-4ZG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpd-cc-YZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="765"/>
         </scene>
     </scenes>
     <resources>
         <image name="0" width="1600" height="1059"/>
+        <image name="FotoProfile" width="70" height="70"/>
+        <image name="IconExit" width="24" height="24"/>
+        <image name="ImageListActive" width="30" height="30"/>
+        <image name="ProfileActiove" width="30" height="30"/>
         <image name="likeButtonOff" width="42" height="42"/>
         <namedColor name="YP Black ">
             <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YP Gray">
+            <color red="0.68199998140335083" green="0.68599998950958252" blue="0.70599997043609619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="YP White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
